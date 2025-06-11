@@ -69,13 +69,13 @@ const Programs = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 font-playfair text-corporate-dark">
-            Образовательные программы
+          <h2 className="text-4xl font-bold mb-6 font-playfair text-slate-900">
+            Образовательные программы СПО
           </h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Аккредитованные программы среднего профессионального образования,
-            соответствующие федеральным государственным образовательным
-            стандартам
+          <p className="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+            Государственная аккредитация программ среднего профессионального
+            образования. Обучение по федеральным государственным образовательным
+            стандартам (ФГОС). Выдача дипломов государственного образца.
           </p>
         </div>
 
@@ -87,31 +87,34 @@ const Programs = () => {
             >
               {program.popular && (
                 <div className="absolute -top-2 -right-2 z-10">
-                  <Badge className="bg-corporate-gold text-corporate-dark font-semibold">
-                    Популярная
+                  <Badge className="bg-amber-500 text-slate-900 font-semibold">
+                    Востребованная
                   </Badge>
                 </div>
               )}
 
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-corporate-blue/10">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-blue-50">
                     <Icon
                       name={program.icon}
                       size={24}
-                      className="text-corporate-blue"
+                      className="text-blue-600"
                     />
                   </div>
                   <div className="text-right">
-                    <Badge variant="secondary" className="mb-1 block">
+                    <Badge
+                      variant="secondary"
+                      className="mb-1 block bg-slate-100"
+                    >
                       {program.level}
                     </Badge>
-                    <span className="text-xs text-slate-500">
+                    <span className="text-xs text-slate-500 font-mono">
                       {program.code}
                     </span>
                   </div>
                 </div>
-                <CardTitle className="text-lg font-montserrat text-corporate-dark leading-tight">
+                <CardTitle className="text-lg font-montserrat text-slate-900 leading-tight">
                   {program.title}
                 </CardTitle>
               </CardHeader>
@@ -129,7 +132,7 @@ const Programs = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-full border-corporate-blue text-corporate-blue hover:bg-corporate-blue hover:text-white"
+                  className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                 >
                   Подробнее о программе
                 </Button>
@@ -139,12 +142,9 @@ const Programs = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button
-            size="lg"
-            className="bg-corporate-blue hover:bg-blue-800 px-8 py-3"
-          >
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-8 py-3">
             <Icon name="FileText" className="mr-2" size={20} />
-            Все программы и условия поступления
+            Правила приема и документы
           </Button>
         </div>
       </div>
