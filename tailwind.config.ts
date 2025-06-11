@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         "open-sans": ["Open Sans", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -29,12 +30,17 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#0EA5E9",
+          DEFAULT: "#1e3a8a",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#F1F0FB",
+          DEFAULT: "#f8fafc",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        corporate: {
+          dark: "#0f172a",
+          blue: "#1e3a8a",
+          gold: "#d4af37",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
