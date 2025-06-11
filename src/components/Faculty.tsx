@@ -4,27 +4,19 @@ const Faculty = () => {
   const faculty = [
     {
       name: "Аванесов Артур Григорьевич",
-      position: "Директор колледжа",
       experience: "18 лет в образовании",
-      specialization: "Управление образованием",
     },
     {
       name: "Климова Елена Владимировна",
-      position: "Зам. директора по учебной работе",
       experience: "15 лет в образовании",
-      specialization: "Экономика и финансы",
     },
     {
       name: "Масленникова Евгения Валерьевна",
-      position: "Зав. кафедрой экономики",
       experience: "12 лет в образовании",
-      specialization: "Бухгалтерский учет",
     },
     {
       name: "Хачикян Виола Арменовна",
-      position: "Преподаватель профильных дисциплин",
       experience: "10 лет в образовании",
-      specialization: "Экономические дисциплины",
     },
   ];
 
@@ -61,13 +53,7 @@ const Faculty = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-600 font-medium mb-2 text-sm">
-                  {member.position}
-                </p>
-                <p className="text-sm text-slate-600 mb-2">
-                  {member.specialization}
-                </p>
-                <p className="text-xs text-slate-500">{member.experience}</p>
+                <p className="text-sm text-slate-600">{member.experience}</p>
               </CardContent>
             </Card>
           ))}
