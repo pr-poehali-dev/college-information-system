@@ -16,18 +16,6 @@ const Contact = () => {
       content: "+7 (8652) 28-03-46",
       action: "Позвонить",
     },
-    {
-      icon: "Mail",
-      title: "Email",
-      content: "info@ssb-stavropol.ru",
-      action: "Написать",
-    },
-    {
-      icon: "Globe",
-      title: "Сайт",
-      content: "www.ssb-stavropol.ru",
-      action: "Перейти",
-    },
   ];
 
   const workingHours = [
