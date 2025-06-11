@@ -13,7 +13,7 @@ const Contact = () => {
     {
       icon: "Phone",
       title: "Телефон",
-      content: "+7 (8652) 99-62-69",
+      content: "+7 (8652) 28-03-46",
       action: "Позвонить",
     },
     {
